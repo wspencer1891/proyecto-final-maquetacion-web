@@ -57,13 +57,14 @@ header{
 
 }
 #menu-icon{
-  display: none;/*esto lo pongo en none para que solo se vea cuando la página este colapsada* de forma horizontal*/
+  display: block;/*esto lo pongo en none para que solo se vea cuando la página este colapsada* de forma horizontal*/
 }
 #menu-icon{
   
   font-size: 35px;
   z-index: 101; /*Para que este sobre el header*/
   cursor: pointer;/*Para que aparezva la manito cuando ponemos el mouse encima*/
+  display: none;
 }
 #menu-toogle{
   display: none;/*nunca quiero que se vea le checkbox*/
@@ -245,10 +246,10 @@ section{
     display: block;
     margin-left: 7px 0;
   }
-  #menu-toogle:checked + label.menu-icon-action + ul{
-    right: 0;
-
+  .navlist.open{
+    right:0;
   }
+ 
     
   
 }
